@@ -1,0 +1,221 @@
+/*GLOBAL CSS STARTS*/
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	background: #F7F8FA;
+}
+label {
+	font-size: 16px;
+	color: #222222;
+}
+.form-control {
+	border-radius: 50px;
+	font-size: 14px;
+	border: 1px solid #DCDCDC;
+	min-height: 50px;
+}
+.btn-primary {
+	background: #04D1EF;
+	border: none;
+	border-radius: 12px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: 12px 30px;
+	min-width: 200px;
+	transition: 0.3s all ease-in;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+	background: #2be4ff !important;
+	box-shadow: none !important;
+	outline: none;
+}
+.main-body {
+    width: calc(97% - 200px);
+    margin-left: 200px;
+    margin-top: 70px;
+}
+/*GLOBAL CSS ENDS*/
+
+/*TABLE STARTS*/
+.teya-table table {
+	border-collapse:separate; 
+  	border-spacing: 0 1em;
+}
+.teya-table table thead th,
+.teya-table table thead td {
+	background: #E7EAF3;
+	color: #222;
+	border: none;
+}
+.teya-table table thead th:first-child {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.teya-table table thead th:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.teya-table table tr td {
+	border: none;
+	font-size: 15px;
+	font-weight: 600;
+	color: #222;
+	background: #fff;
+}
+.teya-table table tr td.table-img span {
+	width: 40px;
+	height: 40px;
+	background: #EEEEEE;
+	border-radius: 50px;
+	display: block;
+}
+/*TABLE ENDS*/
+
+/*LOGIN PAGE STARTS*/
+.login-page {
+	background: url(../images/Login-bg.svg) no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	background-position: left;
+	padding: 100px;
+}
+.login-form {
+	background: #fff;
+	border-radius: 25px;
+	padding: 40px;
+	text-align: left;
+}
+.login-form .form-header {
+	text-align: center;
+}
+.login-form .form-header .login-logo {
+	padding: 20px;
+	max-width: 125px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+	margin-bottom: 30px;
+}
+.login-form .login-titles h4 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #333333;
+}
+.login-form .login-titles p {
+	color: #999999;
+	font-size: 16px;
+
+}
+.login-form form {
+	margin-top: 30px;
+}
+.login-form .bottom-link {
+	font-size: 16px;
+	text-align: center;
+	color: #999999;
+}
+.login-form .btn {
+	margin: 10px auto;
+	display: block;
+	min-width: 200px;
+}
+/*LOGIN PAGE ENDS*/
+
+/*POSTS PAGE STARTS*/
+.table-filters {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #E2E5E6;
+	padding-bottom: 20px;
+	overflow-x: hidden;
+}
+.table-filters .filter-title {
+	font-size: 18px;
+	font-weight: 600;
+	color: #222222;
+	cursor: pointer;
+}
+.table-filters .filter-title .filter-icon {
+	margin-right: 10px;
+}
+.table-filters .filter-list {
+	display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all ease-in; 
+    margin-right: -50%;
+}
+.table-filters.active .filter-list {
+	opacity: 1;
+	visibility: visible;
+	margin-right: 0;
+}
+.table-filters.active {
+	overflow-x: visible;
+}
+.table-filters.active::-webkit-scrollbar {
+  display: none;
+}
+.table-filters.active {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.table-filters .filter-list .dropdown .btn {
+	margin-right: 15px;
+	background: #fff;
+    color: #222;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    padding: 8px 20px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table-filters .filter-list .dropdown:last-child .btn {
+	margin-right: 0px;
+}
+/*POSTS PAGE ENDS*/
+
+/*HEADER STARTS*/
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: calc(97% - 200px);
+	margin-left: 200px;
+}
+header .items-right {
+	width: 40%;
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+header .search-bar {
+	width: 300px;
+	margin-right: 50px;
+	font-size: 14px;
+}
+header .search-bar .form-control {
+	min-height: 40px;
+	border-right: none;
+}
+header .search-bar .form-control::placeholder {
+	color: #A9A7B6;
+}
+header .search-bar .input-group-text {
+	background: #fff;
+	border-left-width: 0px;
+	border-top-right-radius: 50px !important;
+	border-bottom-right-radius: 50px !important;
+}
+/*HEADER ENDS*/

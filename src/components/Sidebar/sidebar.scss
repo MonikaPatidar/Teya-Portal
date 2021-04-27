@@ -1,0 +1,57 @@
+/*Sidebar CSS Starts*/
+.sidebar {
+	position: fixed;
+    left: 20px;
+    top: 20px;
+    height: 95vh;
+    background: #04D1EF;
+    width: 140px;
+    border-radius: 20px;
+    color: #fff;
+    .navbar {
+		display: block;
+		text-align: center;
+		.navbar-brand {
+			margin-right: 0;
+		}
+	}
+	.navbar-nav {
+		display: block;
+		margin-top: 100px;
+		.nav-link {
+			color: #fff;
+			font-size: 12px;
+			font-weight: 500;
+			img {
+				margin-top: 30px;
+				margin-bottom: 10px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.icon-active {
+				display: none;
+			}
+			.icon-inactive {
+				display: block;
+			}
+			&.active {
+				background: #fff;
+				color: #04D1EF;
+				border-radius: 50px;
+			    min-height: 130px;
+			    display: block;
+			    width: 85px;
+			    margin: 0 auto;
+			    margin-top: 30px;
+			    .icon-active {
+					display: block;
+				}
+				.icon-inactive {
+					display: none;
+				}
+			}
+		}
+	}
+}
+/*Sidebar CSS Ends*/
